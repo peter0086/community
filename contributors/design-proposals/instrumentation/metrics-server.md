@@ -14,7 +14,7 @@ We want to collect up to 10 metrics from each pod and node running in a cluster.
 Starting with Kubernetes 1.6 we support 5000 nodes clusters with 30 pods per node.
 Assuming we want to collect metrics with 1 minute granularity this means:
 ```
-10 x 5000 x 30 / 60 = 25000 metrics per second by average
+10 x 5000 x 30 / 60 = 25000 metrics per minute by average
 ```
  
 Kubernetes apiserver persists all Kubernetes resources in its key-value store [etcd](https://coreos.com/etcd/).
